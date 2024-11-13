@@ -5,7 +5,7 @@ import { expect, test } from '@jupyterlab/galata';
 test.describe('MATLAB code execution tests', () => {
     test.beforeEach(async ({ page }) => {
         const notebookName = 'matlab-code-execution.ipynb';
-        await page.notebook.createNew(undefined, { kernel: 'jupyter_matlab_kernel' });
+        await page.notebook.createNew(notebookName, { kernel: 'jupyter_matlab_kernel' });
         await page.notebook.isOpen(notebookName);
         await page.notebook.isActive(notebookName);
     });
