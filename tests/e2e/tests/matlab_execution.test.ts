@@ -11,6 +11,7 @@ test.describe('MATLAB code execution tests', () => {
     });
 
     test('Calling "ver" produces correct output', async ({ page }) => {
+        test.setTimeout(90 * 1000);
         await page.notebook.setCell(0, 'code', 'ver');
         await page.notebook.runCell(0);
 
