@@ -58,7 +58,7 @@ const config = {
         trace: 'on-first-retry',
 
         screenshot: 'only-on-failure',
-        video: 'on',
+        video: 'retain-on-failure',
 
         /** The default viewport size, can be overridden by the tests. */
         viewport: { width: 1024, height: 768 }
