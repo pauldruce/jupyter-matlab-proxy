@@ -3,6 +3,7 @@
 name: End-to-End Tests for MATLAB Integration for Jupyter
 on:
   workflow_call:
+  push:
 
 jobs:
   playwright_e2e_tests:
